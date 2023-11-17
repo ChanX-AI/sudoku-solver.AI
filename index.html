@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        SudokuSolver.AI
+    </div>
+    <div class="container">
+        <div class="board">
+            <div class="cell bl bt"><span class="text"></span></div>
+            <div class="cell bt"><span class="text"></span></div>
+            <div class="cell bt br"><span class="text"></span></div>
+            <div class="cell bt"><span class="text"></span></div>
+            <div class="cell bt"><span class="text"></span></div>
+            <div class="cell bt br"><span class="text"></span></div>
+            <div class="cell bt"><span class="text"></span></div>
+            <div class="cell bt"><span class="text"></span></div>
+            <div class="cell bt br"><span class="text"></span></div>
+
+            <div class="cell bl"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+
+            <div class="cell bl bb"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell br bb"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb br"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb br"><span class="text"></span></div>
+
+            <div class="cell bl"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+
+            <div class="cell bl"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+
+            <div class="cell bl bb"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell br bb"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb br"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb br"><span class="text"></span></div>
+
+            <div class="cell bl"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+
+            <div class="cell bl"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell"><span class="text"></span></div>
+            <div class="cell br"><span class="text"></span></div>
+
+            <div class="cell bl bb"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb br"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb br"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb"><span class="text"></span></div>
+            <div class="cell bb br"><span class="text"></span></div>
+        </div>
+        <div class="container-2">
+            <div class="keyboard">
+                <div class="box"><span class="num">1</span></div>
+                <div class="box"><span class="num">2</span></div>
+                <div class="box"><span class="num">3</span></div>
+                <div class="box"><span class="num">4</span></div>
+                <div class="box"><span class="num">5</span></div>
+                <div class="box"><span class="num">6</span></div>
+                <div class="box"><span class="num">7</span></div>
+                <div class="box"><span class="num">8</span></div>
+                <div class="box"><span class="num">9</span></div>
+                <div class="box"><span>&#10060;</span></div>
+            </div>
+            <div class="btns">
+                <button class="solve">Solve</button>
+                <button class="reset">&#129529;</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
