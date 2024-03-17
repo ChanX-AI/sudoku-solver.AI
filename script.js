@@ -146,7 +146,7 @@ solveBtn.addEventListener('click', ()=>{
         }
     }
     else {
-        alert("This Sudoku can't be solved");
+        alert("This Sudoku cannot be solved");
     }
 })
 
