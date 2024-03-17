@@ -132,8 +132,12 @@ solveBtn.addEventListener('click', ()=>{
     }
     k = 0;
     let result = isValidSudokuGrid(matrix);
-    if (result == true) {
-        solveSudoku(matrix);
+    if (result === true) {
+        let isSolvable = solveSudoku(matrix);
+        if (!isSolvable) {
+            alert("This Sudoku can't be solved");
+            return;
+        }
         for (let i = 0; i < SIZE; i++) {
             for (let j = 0; j < SIZE; j++) {
                 document.getElementsByClassName('cell')[k].innerText = matrix[i][j];
