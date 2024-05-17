@@ -1,1 +1,1 @@
-sudoku solvet
+sudoku solver
